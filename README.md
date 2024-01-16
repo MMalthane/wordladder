@@ -1,3 +1,9 @@
+# word Ladder using 2 words only characters and no numbers and special characters
+# npm install to get node module.
+# npm start to run the project
+# currently in time span of 2 hours test restrictions created a mock data file which shows the output. All other frotnend festures tried to add as much possible.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
