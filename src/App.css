@@ -1,38 +1,90 @@
-.App {
+.inputWord {
+  font-family: sans-serif;
   text-align: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: auto;  
+  scrollbar-gutter: stable both-edges;
+  padding: 20px 0px;
+  scrollbar-gutter: stable both-edges;
+  background-color: rgb(153, 181, 157);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.wordladder {
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid rgb(105, 85, 174);
+  margin-top: 10px;
+  overflow-y: scroll;
+  max-height: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+::-webkit-scrollbar {
+  width: 15%; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input1,
+.input2 {
+  width: 20%;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid rgb(173, 171, 184);
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 10px 10px;
+}
+ul {
+  list-style-type: none;
+  background-color: aliceblue;
+}
+.solveButton {
+  width: 20%;
+  padding: 5px 5px;
+  border: 2px solid rgb(63, 63, 65);
+  font-size: 18px;
+  border-radius: 10px;
+}
+.scrollableContainer{
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+  scrollbar-width: auto;
 }
 
-.App-link {
-  color: #61dafb;
+
+.popupModal {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  z-index: 10;
+  overflow: hidden;
+  background-color: rgb(227 223 230);
+  height: 50%;
+  border: 1px solid grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.popupModal .model-content{
+  z-index: 9999;
+  width: 100%;
+    height: 30%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    padding: 10px 10px;
+}
+
+.closeButton{
+  margin: 10px 10px;
+  padding: 5px 30px;
+}
+img.loader{
+  position: relative;
+  top:10%;
+  background: transparent;
+  padding:10px 10px;
+  text-align: center;
 }
